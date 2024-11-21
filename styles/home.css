@@ -1,0 +1,294 @@
+/* Estilos generales para la barra de encabezado */
+.body{
+	background-color: #E3FFE5;
+	margin: 0px;
+}
+
+/* Estilos generales */
+body {
+    background-color: #E3FFE5;
+    margin: 0;
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #083C22; /* Texto oscuro que combina con el tema */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: bold;
+    color: #013220;
+}
+
+p {
+    margin: 0 0 1em;
+}
+
+/* Encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #083C22;
+    color: #fff;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.nav-links ul li a:hover {
+    background-color: #4CAF50;
+    color: #083C22;
+}
+
+/* Barra de búsqueda */
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1.5px solid #4CAF50;
+    width: 220px;
+    background-color: transparent;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #083C22;
+    outline: none;
+}
+
+/*CATALOGO DE ESPECIAS*/
+#catalogo-secciones 
+{ 
+	padding: 20px; 
+	text-align: center; 
+	background-color: transparent; 
+} 
+.section-title { 
+	
+	font-size: 2rem; 
+	margin-bottom: px; 
+	text-align: center;
+
+} 
+/* style.css */
+.catalogo-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.catalogo-item {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.catalogo-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.catalogo-item img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+/* PANEL NOSOTROS */
+.nosotros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #013220;
+    background-image: url("1x/PNG/marca de agua.png");
+    background-repeat: repeat;
+    background-size: 850px; /* Ajuste del tamaño del fondo */
+    color: #ffffff;
+    border-radius: 15px;
+    margin: 40px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra alrededor */
+}
+
+.nosotros .texto {
+    max-width: 55%;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-left: 50px;
+    color: #f0f0f0; /* Contraste más claro */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombras en el texto */
+}
+
+.nosotros img.logo-n {
+    max-width: 200px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.3)); /* Sombra al logo */
+}
+
+.nosotros .foto {
+    max-width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nosotros .foto:hover {
+    transform: scale(1.05); /* Zoom al pasar el mouse */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .nosotros {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .nosotros .texto {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .nosotros .foto {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .nosotros img.logo-n {
+        margin: 0 auto 20px;
+    }
+}
+
+/*Plantas por temporada*/
+
+.panel {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #E3FFE5;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.season {
+    text-align: center;
+    max-width: 200px;
+}
+
+.season img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.season img:hover {
+    transform: scale(1.05);
+}
+
+.season .plant {
+    font-size: 0.9rem;
+    color: #083C22;
+}
+
+/* footer */
+
+
+/* footer */
+
+
+.footer {
+    background-color: #083C22; /* Fondo verde oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+	margin-top: 50px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.footer .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footer .logo img {
+    max-width: 250px; /* Ajusta el tamaño del logo */
+    margin-right: 10px;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 20px;
+	margin-left: 270px;
+}
+
+.footer .social-icons img {
+    width: 50px; /* Ajusta el tamaño de los iconos sociales */
+    height: 50px;
+}
+
+.footer .contact-info {
+    text-align: center;
+}
+
+.footer .contact-info p {
+    margin: 5px 0;
+}
+
+.footer .contact-info a {
+    color: white;
+    text-decoration: none;
+}
+.footer .fuente {
+	font: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+
