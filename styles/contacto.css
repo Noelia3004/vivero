@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sección Principal */
 main {
-    background: url('1x/2.png') center/cover no-repeat;
+    background: url('img/2.png') center/cover no-repeat;
     min-height: 79vh;
     display: flex;
     align-items: center;
@@ -116,7 +116,7 @@ main h1 {
     flex: 1 1 48%;
     min-height: 400px;;
     background-color: #013220;
-    background-image: url("1x/marca de agua.png");
+    background-image: url("img/marca de agua.png");
     background-repeat: repeat;
     background-size: contain;
     background-position: center;
