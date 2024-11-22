@@ -190,66 +190,121 @@ header input{
     height: 30px;
 }
 
+/* footer */
+
+
 .footer {
     background-color: #083C22; /* Fondo verde oscuro */
     color: white; /* Texto blanco */
     padding: 20px;
 	margin-top: 50px;
+	box-sizing: border-box;
 }
 
 .footer .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     max-width: 1200px;
     margin: auto;
-	margin-top: 20px;
 	padding: 10px;
+	flex-wrap: wrap;
+	gap: 20px;
+	text-align: center;
 }
 
 .footer .left-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.footer .logo {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
+    text-align: center;
 }
 
 .footer .logo img {
-    max-width: 250px; /* Ajusta el tamaño del logo */
-    margin-right: 10px;
+    max-width: 500px; /* Ajusta el tamaño del logo*/
+    margin-bottom: 10px;
 }
 
 .footer .social-icons {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .footer .social-icons img {
-    width: 30px; /* Ajusta el tamaño de los iconos sociales */
-    height: 30px;
-    transition: 0.4s;
-}
-.footer .social-icons img:hover{
-    transform: scale(1.1);
-
+    width: 40px; /* Ajusta el tamaño de los iconos sociales */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.footer .contact-info {
-    text-align: right;
+.footer .social-icons img:hover {
+    transform: scale(1.2); /* Efecto al pasar el mouse */
 }
 
-.footer .contact-info p {
+.footer .right-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .right-section p {
     margin: 5px 0;
 }
 
-.footer .contact-info a {
+.footer .right-section a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
+
+.footer .right-section a:hover {
+    color: #F0A500; /* Cambia de color al pasar el mouse */
+}
+.footer .fuente {
+	font: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+/* Breakpoints para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer .left-section,
+    .footer .right-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .social-icons img {
+        width: 35px; /* Iconos más pequeños */
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer .logo img {
+        max-width: 150px; /* Reduce más el logo */
+    }
+
+    .footer .social-icons {
+        gap: 5px; /* Menos espacio entre los iconos */
+    }
+
+    .footer .social-icons img {
+        width: 30px; /* Tamaño aún más pequeño */
+        height: 30px;
+    }
+
+    .footer .right-section p {
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
 .color{
     background-color: #083C22;
 
