@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Tiny5&display=swap');
+.body{
+	background-color: #E3FFE5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #042716;
+    align-items: center;
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(5, 54, 22);
+    position: sticky;
+    padding: 1rem;
+}
+header img{
+    width: 200px;
+    height: 100px;
+}
+header ul{
+    display: flex;
+    gap: 4rem;
+    margin: 1rem;
+    list-style-type: none;
+}
+header a{
+    text-decoration: none;
+    color: #dee0de;
+    font-size: 1.1rem;
+    padding:6px;
+    border-radius: 1rem;
+    transition: .4s;
+    border: 1px solid rgb(144, 146, 144);
+}
+header a:hover{
+    background-color: rgb(7, 99, 54)
+}
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header input{
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.lupa{
+    display: flex;
+    flex-direction: initial;
+    gap: 1rem;
+}
+.lupa img{
+    height: 25px;
+    width: 25px;
+}
+
+.fondo{
+    background-image: url(/images/sikduf.webp);
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    background-position:center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fondo::before{
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+.fondo p{
+    color: rgba(224, 224, 224, 0.973);
+    position: relative;
+    font-size: 2.5rem;
+    font-family: sans-serif;
+}
+.div-1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.div-1 img{
+    margin: 3rem;
+    border-radius: 1rem;
+    height: 350px;
+    width: 600px;
+    -webkit-box-shadow: 7px 6px 11px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 7px 6px 11px 0px rgba(133,133,133,1);
+    box-shadow: 7px 6px 11px 0px rgba(133,133,133,1);
+    transition: .4s;
+}
+
+.div-1 img:hover{
+    transform: scale(1.1);
+}
+
+.div-1 div  {
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-1 p{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+.div-1 h1{
+    font-family: playfair display;
+}
+.frase{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: playfair display;
+}
+
+.buscar img{
+    width: 30px;
+    height: 30px;
+}
+
+.footer {
+    background-color: #083C22; /* Fondo verde oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+	margin-top: 50px;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+	margin-top: 20px;
+	padding: 10px;
+}
+
+.footer .left-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footer .logo img {
+    max-width: 250px; /* Ajusta el tamaño del logo */
+    margin-right: 10px;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .social-icons img {
+    width: 30px; /* Ajusta el tamaño de los iconos sociales */
+    height: 30px;
+    transition: 0.4s;
+}
+.footer .social-icons img:hover{
+    transform: scale(1.1);
+
+}
+
+.footer .contact-info {
+    text-align: right;
+}
+
+.footer .contact-info p {
+    margin: 5px 0;
+}
+
+.footer .contact-info a {
+    color: white;
+    text-decoration: none;
+}
+.color{
+    background-color: #083C22;
+
+}
+
+.hamburguesa{
+    width: 35px;
+    height: 35px;
+}
+.navbar{
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 960px){
+.div-1{
+    flex-direction: column;
+}
+}
+@media (max-width: 765px){
+    .div-1 h1{
+        font-size: 1.4rem;
+    }
+    .div-1 p{
+        font-size: 1rem;
+    }
+    .div-1 img{
+        height: 300px;
+        width: 90%;
+    }
+    .iconop{
+        background-color: #083C22;
+    }
+    header{
+        display: none;
+    }
+    .navbar{
+        display: block;
+    }
+    .frase{
+        font-size: 1rem;
+    }
+    .fuente{
+        font-size: 12px;
+    }
+    .fondo p{
+        font-size: 2rem;
+        padding-top: 3rem;
+    }
+    .logo img{
+        height: 70px;
+        width: 70px;
+    }
+}
