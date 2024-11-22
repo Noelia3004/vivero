@@ -1,3 +1,4 @@
+
 /* Estilos generales */
 body {
     background-color: #E3FFE5;
@@ -13,7 +14,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #013220;
 	overflow-wrap: break-word;
 }
-
+img {
+	width: 10em;
+}
 
 /* Encabezado */
 .header {
@@ -79,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Sección Principal */
 main {
     background: url('../img/2.png') center/cover no-repeat;
-    min-height: 79vh;
+    min-height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,7 +94,7 @@ main {
 main h1 {
     z-index: 1;
     text-shadow: 2px 2px 5px black;
-	font-size: 500%;
+	font-size: 3em;
 }
 
 /* Sección de Contacto */
