@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* sobre .nosotros */
+
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 0 10px 0 10px;
+    border-radius: 10px;
+}
+.banner > div {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0; 
+}
+.banner > div > img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.banner-parrafo
+{
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    padding: 0 10px 0 10px;
+    font-size: 1.5rem;
+}
+.parrafo-nosotros
+{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.titulos-ventas
+{
+    font-family: "Playfair Display", serif;
+    color:white;
+    text-align: center;
+}
+.titulo-nosotros
+{
+    font-family: "Playfair Display", serif;
+}
+/* footer */
+.nosotros
+{
+    object-fit: cover;
+}
+.bg-custom
+{
+    background-color: #083C22;
+}
+.cualquiera
+{
+    width: 100%;
+}
+.cualquiera img
+{
+    width: 100%;
+}
+
+.bg-fondo
+{
+    background-color: #E3FFE5;
+}
+/* Encabezado */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: #083C22;
+    color: #fff;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	margin-bottom: 1px;
+}
+
+.logo img {
+    width: 15em;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.nav-links ul li a:hover {
+    background-color: #4CAF50;
+    color: #083C22;
+}
+
+/* Barra de búsqueda */
+.search-container input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1.5px solid #4CAF50;
+    width: 220px;
+    background-color: transparent;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #083C22;
+    outline: none;
+}
+
+.container {
+    max-width: 1200px; /* Ajusta según lo necesario */
+    margin: 0 auto; /* Centra el contenido */
+    padding: 0 15px; /* Espaciado lateral para pantallas pequeñas */
+}
+.nosotros{
+    font-weight: bold;
+}
+.nosotros img{
+    width: 30px;
+}
+
+.equipo {
+    background-color:#021F10 ;
+}
+.img
+{
+    background-color: #083C22;
+    background-image: url(assets/marcadeagua.png);
+}
+
+/* footer */
+
+
+.footer {
+    background-color: #083C22;  /* Fondo verde oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+	box-sizing: border-box;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+	padding: 10px;
+	flex-wrap: wrap;
+	gap: 20px;
+	text-align: center;
+}
+
+.footer .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer .logo img {
+    max-width: 500px; /* Ajusta el tamaño del logo*/
+    margin-bottom: 10px;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer .social-icons img {
+    width: 40px; /* Ajusta el tamaño de los iconos sociales */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer .social-icons img:hover {
+    transform: scale(1.2); /* Efecto al pasar el mouse */
+}
+
+.footer .right-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .right-section p {
+    margin: 5px 0;
+}
+
+.footer .right-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .right-section a:hover {
+    color: #F0A500; /* Cambia de color al pasar el mouse */
+}
+.footer .fuente {
+	font: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+/* Breakpoints para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer .left-section,
+    .footer .right-section {
+        width: 100%;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner >div{
+        padding:0px;
+        margin: 0px;
+        width: 100%;
+    }
+    .banner img{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .social-icons img {
+        width: 35px; /* Iconos más pequeños */
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer .logo img {
+        max-width: 150px; /* Reduce más el logo */
+    }
+
+    .footer .social-icons {
+        gap: 5px; /* Menos espacio entre los iconos */
+    }
+
+    .footer .social-icons img {
+        width: 30px; /* Tamaño aún más pequeño */
+        height: 30px;
+    }
+
+    .footer .right-section p {
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
+}

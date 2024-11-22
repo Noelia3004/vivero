@@ -1,0 +1,250 @@
+/* Encabezado */
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 40px;
+background-color: #083C22;
+color: #fff;
+height: auto;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+margin-bottom: 1px;
+}
+
+.logo img {
+width: 15em;
+height: auto;
+margin-bottom: 0;
+}
+
+.nav-links ul {
+display: flex;
+gap: 30px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.nav-links ul li a {
+text-decoration: none;
+color: white;
+font-size: 16px;
+font-weight: bold;
+padding: 5px 15px;
+border: 2px solid transparent;
+border-radius: 20px;
+transition: all 0.3s;
+}
+
+.nav-links ul li a:hover {
+background-color: #4CAF50;
+color: #083C22;
+}
+
+/* Barra de búsqueda */
+.search-container input[type="text"] {
+padding: 8px 12px;
+border-radius: 20px;
+border: 1.5px solid #4CAF50;
+width: 220px;
+background-color: transparent;
+font-size: 14px;
+transition: all 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+border-color: #083C22;
+outline: none;
+}
+
+.container {
+max-width: 1200px; /* Ajusta según lo necesario */
+margin: 0 auto; /* Centra el contenido */
+padding: 0 15px; /* Espaciado lateral para pantallas pequeñas */
+}
+
+/*filtro*/
+.filtro {
+    background-color: #083c22;
+    background-image: url(assets/fondofiltro.svg);
+    background-size: cover;
+    background-position: center; /* Fondo oscuro */
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    height: 85%;
+}
+.img-fondo
+{
+    background: url(assets/ns.svg);
+    width: 100% !important; 
+    height: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+}
+.img
+{
+    background-color: #083C22;
+    background-image: url(assets/marcadeagua.png);
+}
+.filtro h5 {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.filtro input[type="checkbox"] {
+    margin-right: 10px;
+}
+.filtro ul {
+    list-style: none;
+    padding: 0;
+}
+.filtro ul li {
+    margin-bottom: 15px;
+}
+.productos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.producto {
+    text-align: center;
+    background-color: #083c22;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.titulo-ofertas {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #055A33;
+    font-family: "Playfair Display", serif;
+}
+
+
+
+
+/* footer */
+
+
+.footer {
+    background-color: #083C22; /* Fondo verde oscuro */
+    color: white; /* Texto blanco */
+    padding: 20px;
+	box-sizing: border-box;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+	padding: 10px;
+	flex-wrap: wrap;
+	gap: 20px;
+	text-align: center;
+}
+
+.footer .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer .logo img {
+    max-width: 500px; /* Ajusta el tamaño del logo*/
+    margin-bottom: 10px;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer .social-icons img {
+    width: 40px; /* Ajusta el tamaño de los iconos sociales */
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer .social-icons img:hover {
+    transform: scale(1.2); /* Efecto al pasar el mouse */
+}
+
+.footer .right-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer .right-section p {
+    margin: 5px 0;
+}
+
+.footer .right-section a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer .right-section a:hover {
+    color: #F0A500; /* Cambia de color al pasar el mouse */
+}
+.footer .fuente {
+	font: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+}
+/* Breakpoints para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .footer .left-section,
+    .footer .right-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .social-icons img {
+        width: 35px; /* Iconos más pequeños */
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 10px;
+    }
+
+    .footer .logo img {
+        max-width: 150px; /* Reduce más el logo */
+    }
+
+    .footer .social-icons {
+        gap: 5px; /* Menos espacio entre los iconos */
+    }
+
+    .footer .social-icons img {
+        width: 30px; /* Tamaño aún más pequeño */
+        height: 30px;
+    }
+
+    .footer .right-section p {
+        font-size: 0.9rem; /* Texto más pequeño */
+    }
+}
