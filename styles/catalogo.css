@@ -77,7 +77,7 @@ padding: 0 15px; /* Espaciado lateral para pantallas pequeñas */
 }
 .img-fondo
 {
-    background: url(assets/ns.svg);
+    background: url(img/assets/ns.svg);
     width: 100% !important; 
     height: auto !important;
     display: flex;
